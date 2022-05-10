@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>url shortner</title>
+</head>
+<h1>URL shortener</h1>
+<style>
+  
+
+    form{
+        width: 800px;
+        height: 600px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin: auto;
+        padding: 300px 0;
+
+    }
+    button{
+        margin-top: 20px;
+        
+    }
+    h1{
+         text-align: center;
+    }
+</style>
+<body>
+  <form action="" method="POST">
+       {%csrf_token %}
+  <h1>  ༼ つ ◕_◕ ༽つ   Enter the LongURL    ༼ つ ◕_◕ ༽つ </h1>
+  <input type="text" name="full_url"/>
+  <button type="submit">submit</button>
+  <h1>   ( / ﾟｰﾟ)/           ＼(ﾟｰﾟ＼) </h1>
+  <p> 
+      {{ full_url }}
+  </p>
+  <p> 
+    {{ short_url }}
+  </p>
+ </form>
+    <h>hi</h>
+</body>
+</html>
